@@ -41,24 +41,26 @@ fi
 
 # Extract the text content of the PDF file
 text=$(pdftotext $1 -)
-
-# Clean the text
-text=$(echo $text | tr '\n' ' ' | tr -s ' ' | sed 's/[^a-zA-Z0-9. ]//g' | sed 's/ \././g')
+text=$(echo $text | sed 's/\\/ /g' | sed 's/\\n//g' | sed 's/\\f//g' | tr -d '\n\f\r' | sed 's/[[:space:]]\+/ /g')
+# Escape special characters in the text
+text=$(echo $text | sed 's/"/\\"/g')
 
 # Pull the llama3.1 model
 model="llama3.1"
 
-# Ask the question using the ollama API
-response=$(curl http://localhost:11434/api/generate -d '{
-  "model": "'$model'",
-  "context": "'$text'",
-  "prompt": "'$2'"
-}')
+# Create the prompt by combining the PDF content with the user's question
+prompt="You are provided with the following text from a PDF file:\n\n'$text'\n\nQuestion: $2"
 
-echo $response
+# Ask the question using the ollama API
+response=$(curl -s -X POST "http://localhost:11434/api/generate" \
+    -H "Content-Type: application/json" \
+    -d '{
+        "model": "'"$model"'",
+        "prompt": "'"$prompt"'"
+      }')
 
 # Extract the answer from the response
-answer=$(echo $response | jq -r '.answer')
+answer=$(echo $response | jq -r '.response')
 
 # Print the answer
 echo $answer
