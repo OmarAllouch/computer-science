@@ -1,0 +1,179 @@
+Exercise 1: A happy little journey
+1. -
+
+2. pwd
+/home/omar/
+
+3. echo Hello
+Hello
+
+4. cd /tmp && ls
+checkup-db-1000
+hsperfdata_omar
+hyde-keybinds.jq
+hyprdots-1000-gpuinfo-query
+lu395464ebk1n.tmp
+nvim.omar
+ollama47497387
+omar-code-zsh
+python-languageserver-cancellation
+sddm-auth-5b0e5587-1382-4dcd-860c-5a7199dbca9e
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-bluetooth.service-e0wRJi
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-dbus-broker.service-ggxVCS
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-polkit.service-cFF680
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-logind.service-qjR7Eb
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-timesyncd.service-7KVAj4
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-upower.service-60XwzR
+Temp-7c12257d-fa3c-447a-a3be-ddcb2a83b8b5
+vscode-typescript1000
+
+5.
+- Long format: ls -l
+total 12
+drwxr-xr-x 3 omar   omar     80 Sep 18 15:20 checkup-db-1000
+drwxr-xr-x 2 omar   omar     60 Sep 18 14:29 hsperfdata_omar
+-rw-r--r-- 1 omar   omar   5964 Sep 18 11:33 hyde-keybinds.jq
+-rw-r--r-- 1 omar   omar    112 Sep 17 09:50 hyprdots-1000-gpuinfo-query
+drwx------ 2 omar   omar    120 Sep 18 14:28 lu395464ebk1n.tmp
+drwx------ 3 omar   omar     60 Sep 18 15:36 nvim.omar
+drwx------ 3 ollama ollama   80 Sep 16 19:00 ollama47497387
+drwxr-xr-x 2 omar   omar    120 Sep 17 10:51 omar-code-zsh
+drwxr-xr-x 2 omar   omar     40 Sep 17 10:51 python-languageserver-cancellation
+srwxr-xr-x 1 root   root      0 Sep 16 19:00 sddm-auth-5b0e5587-1382-4dcd-860c-5a7199dbca9e
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-bluetooth.service-e0wRJi
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-dbus-broker.service-ggxVCS
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-polkit.service-cFF680
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-logind.service-qjR7Eb
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-timesyncd.service-7KVAj4
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-upower.service-60XwzR
+drwx------ 2 omar   omar     40 Sep 16 19:00 Temp-7c12257d-fa3c-447a-a3be-ddcb2a83b8b5
+drwxr-xr-x 2 omar   omar     40 Sep 17 10:51 vscode-typescript1000
+
+- time reverse: ls -rt
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-timesyncd.service-7KVAj4
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-dbus-broker.service-ggxVCS
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-bluetooth.service-e0wRJi
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-logind.service-qjR7Eb
+ollama47497387
+sddm-auth-5b0e5587-1382-4dcd-860c-5a7199dbca9e
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-polkit.service-cFF680
+systemd-private-bf4fda1996264597af0e67b7f5e75d60-upower.service-60XwzR
+Temp-7c12257d-fa3c-447a-a3be-ddcb2a83b8b5
+hyprdots-1000-gpuinfo-query
+omar-code-zsh
+vscode-typescript1000
+python-languageserver-cancellation
+hyde-keybinds.jq
+lu395464ebk1n.tmp
+hsperfdata_omar
+checkup-db-1000
+nvim.omar
+
+- both: ls -lrt
+total 12
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-timesyncd.service-7KVAj4
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-dbus-broker.service-ggxVCS
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-bluetooth.service-e0wRJi
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-systemd-logind.service-qjR7Eb
+drwx------ 3 ollama ollama   80 Sep 16 19:00 ollama47497387
+srwxr-xr-x 1 root   root      0 Sep 16 19:00 sddm-auth-5b0e5587-1382-4dcd-860c-5a7199dbca9e
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-polkit.service-cFF680
+drwx------ 3 root   root     60 Sep 16 19:00 systemd-private-bf4fda1996264597af0e67b7f5e75d60-upower.service-60XwzR
+drwx------ 2 omar   omar     40 Sep 16 19:00 Temp-7c12257d-fa3c-447a-a3be-ddcb2a83b8b5
+-rw-r--r-- 1 omar   omar    112 Sep 17 09:50 hyprdots-1000-gpuinfo-query
+drwxr-xr-x 2 omar   omar    120 Sep 17 10:51 omar-code-zsh
+drwxr-xr-x 2 omar   omar     40 Sep 17 10:51 vscode-typescript1000
+drwxr-xr-x 2 omar   omar     40 Sep 17 10:51 python-languageserver-cancellation
+-rw-r--r-- 1 omar   omar   5964 Sep 18 11:33 hyde-keybinds.jq
+drwx------ 2 omar   omar    120 Sep 18 14:28 lu395464ebk1n.tmp
+drwxr-xr-x 2 omar   omar     60 Sep 18 14:29 hsperfdata_omar
+drwxr-xr-x 3 omar   omar     80 Sep 18 15:20 checkup-db-1000
+drwx------ 3 omar   omar     60 Sep 18 15:36 nvim.omar
+
+6. cd / && ls
+bin   dev  home  lib64       mnt  proc  run   srv  tmp  var
+boot  etc  lib   lost+found  opt  root  sbin  sys  usr
+
+7. cd or cd ~
+
+8. cat /etc/services -> result in file `services.txt`
+
+9. -
+
+------------------------------------------------------------------------------------------------------------------------
+
+Exercise 2: Local file management
+1. mkdir LFM && cd LFM && pwd
+/home/omar/LFM
+
+2. find /usr/share/doc -name "README*" -size +2k -size -10k -> result in `doc.txt`
+
+3. cp /usr/share/doc/tree-sitter-markdown/README.md ./
+
+4. wc README.md 
+82  448 4750 README.md (lines, words, bytes)
+sed -e 's/\. /\n/g' README.md | wc -l (I considered that each sentence ends with a dot and a space) 
+96 (sentences)
+
+cat > rubish.docx (I wrote: "Some text" and then pressed Ctrl+D)
+
+5. Method 1: ls -lh rubish.docx
+   -rw-r--r-- 1 omar omar 15 Sep 26 09:28 rubish.docx
+   Method 2: du -h rubish.docx
+   4.0K	rubish.docx
+
+6. file rubish.docx
+   rubish.docx: ASCII text, with no line terminators
+   Applications like Microsoft Word, LibreOffice, or Google Docs can open .docx files, but this file isn't in a proper DOCX format as shown by the file command.
+
+7. cat rubish.docx -> Some text here.%
+   Same as the content I wrote.
+
+8. mkdir temp && mv rubish.docx temp/rubish.txt
+
+------------------------------------------------------------------------------------------------------------------------
+
+Exercise 3: Remote file management
+1. ssh omar.allouch@ens-srv-eftcl.emse.fr
+
+2. mkdir RFM && cd RFM
+curl -o lorem_ipsum.txt https://ci.mines-stetienne.fr/cps2/course/efcl/data/lorem.ipsum
+
+3. cp lorem_ipsum "place holder.txt"
+wc -w place\ holder.txt 
+400 place holder.txt (-> 400 words)
+sed -e 's/\. /\n/g' place\ holder.txt | wc -l
+59 (sentences)
+
+4. Not sure I completely understood the question but here's what I did:
+   scp README.md omar.allouch@ens-srv-eftcl.emse.fr:~/RFM/
+   (I copied the file on the remote machine and added some text to it)
+   diff README.md README2.md
+   82a83,85
+   > 
+   > 
+   > This is a diff.
+
+
+5. rsync -av temp/ omar.allouch@ens-srv-eftcl.emse.fr:~/RFM/temp/
+   created directory /home/omar.allouch/RFM/temp
+   ./
+   rubish.txt
+   sent 194 bytes  received 88 bytes  62.67 bytes/sec
+   total size is 62  speedup is 0.22
+
+   echo "New file arrived" > temp/newfile.txt
+
+   rsync -av temp/ omar.allouch@ens-srv-eftcl.emse.fr:~/RFM/temp/
+   sending incremental file list
+   ./
+   newfilelocal.txt
+   sent 187 bytes  received 38 bytes  40.91 bytes/sec
+   total size is 88  speedup is 0.39
+
+   rsync -av omar.allouch@ens-srv-eftcl.emse.fr:~/RFM/temp/ temp/
+   receiving incremental file list
+   ./
+   newfileremote.txt
+   sent 46 bytes  received 244 bytes  52.73 bytes/sec
+   total size is 115  speedup is 0.40
