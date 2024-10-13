@@ -1,0 +1,26 @@
+{
+	"inauguration-date": "2018-09-24",
+	"product": "yogurt",
+	"workshops": [
+		{
+			"name": "conveying workshop",
+			"type": "VL10",
+			"operating_state": "running"
+		},
+		{
+			"name": "filling workshop",
+			"type": "DX10",
+			"operating_state": "stopped"
+		},
+		{
+			"name": "potting workshop",
+			"type": "APAS",
+			"operating_state": "stopped"
+		},
+		{
+			"name": "packaging workshop",
+			"type": "XY10",
+			"operating_state": "stopped"
+		},
+	]
+}
